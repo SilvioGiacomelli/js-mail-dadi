@@ -39,13 +39,16 @@ let dadoComputer = Math.floor(Math.random() * 6) + 1;
 console.log("Giocatore lancia un dado: " + dadoGiocatore);
 console.log("Computer lancia un dado: " + dadoComputer);
 
-// Vincitore
+// Vincitore con stampa su Html
 if (dadoGiocatore > dadoComputer) {
   console.log("Il giocatore vince!");
+  document.getElementById('outputdice').innerHTML = "Ha vinto il giocatore!";
 } else if (dadoGiocatore < dadoComputer) {
   console.log("Il computer vince!");
+  document.getElementById('outputdice').innerHTML = "Ha vinto il pc!";
 } else {
   console.log("Pareggio!");
+  document.getElementById('outputdice').innerHTML = "Pareggio!";
+
 }
 
-// Stampa i risultati dei dadi
